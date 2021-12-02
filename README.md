@@ -2,4 +2,4 @@
 
 A new Flutter project.
 
-![](assets\images\login_ui.png)
+![](assets/images/login_ui.png)
