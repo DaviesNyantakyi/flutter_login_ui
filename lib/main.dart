@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 void main() {
   runApp(MyApp());
@@ -232,95 +231,89 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(
                     height: 30,
                   ),
-                  Column(
-                    children: [
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          'Email',
-                          style: TextStyle(
-                            fontFamily: 'PT-Sans',
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: const Text(
+                      'Email',
+                      style: TextStyle(
+                        fontFamily: 'PT-Sans',
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
-                      const SizedBox(
-                        height: 10,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  _buildTextField(
+                    hintText: 'Enter your email',
+                    obscureText: false,
+                    prefixedIcon: const Icon(Icons.mail, color: Colors.white),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  Container(
+                    alignment: Alignment.centerLeft,
+                    child: const Text(
+                      'Password',
+                      style: TextStyle(
+                        fontFamily: 'PT-Sans',
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
                       ),
-                      _buildTextField(
-                        hintText: 'Enter your email',
-                        obscureText: false,
-                        prefixedIcon:
-                            const Icon(Icons.mail, color: Colors.white),
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        child: const Text(
-                          'Password',
-                          style: TextStyle(
-                            fontFamily: 'PT-Sans',
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 10,
-                      ),
-                      _buildTextField(
-                        hintText: 'Enter your password',
-                        obscureText: true,
-                        prefixedIcon:
-                            const Icon(Icons.lock, color: Colors.white),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      _buildForgotPasswordButton(),
-                      _buildRemeberMe(),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      _buildLoginButton(),
-                      const SizedBox(
-                        height: 20,
-                      ),
-                      const Text(
-                        '- OR -',
-                        style: TextStyle(
-                          fontFamily: 'PT-Sans',
-                          fontSize: 16,
-                          color: Colors.white,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 15,
-                      ),
-                      const Text(
-                        'Sign in with',
-                        style: TextStyle(
-                          fontFamily: 'PT-Sans',
-                          fontSize: 16,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      _buildSocialButtons(),
-                      const SizedBox(
-                        height: 30,
-                      ),
-                      _buildSignUpQuestion()
-                    ],
-                  )
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  _buildTextField(
+                    hintText: 'Enter your password',
+                    obscureText: true,
+                    prefixedIcon: const Icon(Icons.lock, color: Colors.white),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  _buildForgotPasswordButton(),
+                  _buildRemeberMe(),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  _buildLoginButton(),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  const Text(
+                    '- OR -',
+                    style: TextStyle(
+                      fontFamily: 'PT-Sans',
+                      fontSize: 16,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 15,
+                  ),
+                  const Text(
+                    'Sign in with',
+                    style: TextStyle(
+                      fontFamily: 'PT-Sans',
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  _buildSocialButtons(),
+                  const SizedBox(
+                    height: 30,
+                  ),
+                  _buildSignUpQuestion()
                 ],
               ),
             ),
